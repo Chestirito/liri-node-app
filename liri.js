@@ -62,7 +62,8 @@ function spotifyThis(){
 
 //spotifyThis();
 function movieThis(){
-    var queryUrl = "http://www.omdbapi.com/?t=" + argument + "&y=&plot=short&apikey=trilogy";
+    var queryUrl = "http://www.omdbapi.com/?t=" + argument + "&y=&plot=short&apikey=" + key.omdb.key;
+    //console.log(key.omdb.key);
 
     request(queryUrl, function(error, response, body){
 
